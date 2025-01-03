@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="ionicons">
+                <ion-icon name="close-circle-outline"></ion-icon>
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <ion-icon name="remove-circle-outline"></ion-icon>
+            </div>
+            <hr>
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contatos">
+                <input type="text" id="input-nome" autocomplete="off" required placeholder="Nome"/>
+                <input type="tel" id="input-tel" pattern="[0-9]{5}-[0-9]{4}" required placeholder="XXXXX-XXXX" />
+                <input type="email" id="input-email" placeholder="e-mail" />
+                <button type="submit" id="cadastrar-button" value="Enviar">Cadastrar</button>
+            </fieldset>
+        </form>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contato</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./main.js"></script>
+</html>
